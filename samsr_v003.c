@@ -8,8 +8,8 @@ as a console game then will develop into a full-fledged 3d game using sdl or all
 game programming, 3d, to play a non-addictive, satisfying, custom-made(d.i.y) game, and become a game dev!
 
 creation date: 11/1/2016, current update: 12/11/2017, goal finish date: 12/24/2017, created by: radgast1010
-1st stable build: samsarhah_v003.exe
-2nd stable build: samsarhah_v004.exe with jobs, and longer narration
+1st stable build: samsr_v003.exe
+2nd stable build: samsr_v004.exe with jobs, and longer narration
 */
 
 #include <stdio.h>
@@ -687,6 +687,7 @@ void job_factor(PlayerData *pd1)
 
     }
 }
+
 
 
 
