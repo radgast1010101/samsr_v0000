@@ -1,0 +1,32 @@
+samsr version003 updates to become version004
+
+1. change process to a more puzzling, longer naration, difficult decision-making process...100%!
+3. add profession, like soldier(+2), healer(+2), worker(+3), hunter(+1), bum(-1), thief(-2), mobster(-3), witch(-2) ..100%
+4. add incremental/decremental kp based on chosen profession ..100%
+
+
+char *jobs[] = {"soldier", "bum","healer","thief","worker","mobster","hunter","witch"};
+
+char* random_job(void){
+	//get job
+            int jobnum = NELEMS(job);
+            static char jobname[9]; 
+            jobname = jobs[rnd(jobnum)]; 
+         printf("Your job is a... %s\n", );            
+          return jobname;
+}
+
+//job select interval 2x
+void job_factor(void){
+switch(random_job()) {
+          case 'soldier':     pd1.kp += 2; break; 
+           case 'bum':         pd1.kp -= 1; break; 
+           case 'healer':     pd1.kp += 2; break; 
+           case 'thief':     pd1.kp -= 2; break; 
+           case 'worker':     pd1.kp += 3; break; 
+           case 'mobster':     pd1.kp -= 3; break; 
+           case 'hunter':     pd1.kp +=1; break; 
+           case 'witch':     pd1.kp -= 2; break; 
+
+}
+} 

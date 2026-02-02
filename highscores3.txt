@@ -1,0 +1,10 @@
+23	tiz	ET	
+25	luzint	Zoan	
+64	taski	ET	
+51	yuyu	ET	
+60	ret	Zoan	
+32	ty	ExT	
+54	tey	Insect	
+0	tre	Zoan	
+90	tem	ExT	
+70	huy	Human	

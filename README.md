@@ -1,0 +1,51 @@
+# s.a.m.s.r_v0000
+**instructions**
+
+
+1. start game , then option y  = start , h = highscore
+
+2. if h, display highscore (array or persistent)
+
+3. if y, start game setup
+	3a. read, evaluate, print
+	3b. give random specie , so an array of specie
+        3c. specie has names, give out a single name, example human->ben, james, joan, anna, etc
+        3d. set karma points = 0, isAlive = true
+	3e. set life_events = 3 from life_events array
+
+4. start game loop, data-> 
+
+// variables (global, local)
+*string specie: "", string specie_name: "", int karma points: 0, boolean isAlive, 
+array of structs called events, event_count = 3; char start, char decision, 
+array of struct destiny, struct fate, array of struct highscore*
+
+// functions
+*getRandomEvents: array of structs, getRandomSpecie: string, getRandomSpecieName: string
+setupPlayerData: struct, displayScore: void, displayHighScore: void, displayEndingStatus: void*
+ 
+  // main game loop
+	4.a. random function to get events from array named events, store in array named destiny
+
+  // what if odd, even algorithm
+	4.b for loop(ec = 0, isAlive = true ; event_count <=3 or isAlive = false; ec++)
+    *{
+		// process events and add points
+		destiny[ec];
+		display "situation or event", get decisionYesNo or (fate) values ex. yes=10, no=0			
+		// get decision, 					 
+			if decision is not null or while decision != x,
+                        print decide "y for yes", "n fo no", x for exit program
+      get fate value, based on decision (if y get fate.y value, else get fate.n value)
+			put isAlive value, put karma pts value
+      else loop for yes ,no, x(exit) decision  
+		}*
+	4.c satisfied for loop, display karma points(kp), highscore list, and the evaluation (just
+	  a sentence) if (you passed samsr or failed it)
+    
+  4.d play again? y for yes or x for exit. 
+
+5. if x , exit program
+
+---
+   

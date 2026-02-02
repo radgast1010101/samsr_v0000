@@ -1,0 +1,91 @@
+
+
+typedef struct{
+    int id;
+    char real_name[20];
+    char name[20];
+    char specie[20];
+    char date[20];
+    int score;
+} Highscores;
+
+
+=========================
+
+void save
+get (id, score, name, specie, date) from struct playerdata
+
+initialize highscores e.g. Highscores hsd[20];
+
+insert/put into struct highscore (id name, specie, date & score)..ok
+
+save into file highscores.txt..ok
+
+
+display and sort highscores..ok
+
+============================
+
+void insert_to_highscores(Highscores *hsd, int hsid, char *real_name, char *names, char *species, char *dates,  int hsscore){
+
+   hsd->id = hsid;  
+   hsd->real_name = real_name;
+   hsd->name = names;
+   hsd->specie = species;
+   hsd->date = dates; 
+   hsd->score = hsscore; 
+
+  //test
+  printf( "%d\t%s\t%s\t%s\t%d\n", hsd.id, hsd.name, hsd.specie, hsd.date, hsd.score);
+   
+}
+
+void write_to_file_highscores(int hsid, char *real_names, char *names, char *species, char *dates, int hsscore){
+   
+   FILE *file = fopen("highscores2.txt", "a");
+   if(file == NULL){printf("Error in saving highscores!");
+   }
+
+   fprintf(file, "%d\t%s\t%s\t%s\t%s\t%d\n", id, real_names, names, species, dates, hsscore);
+
+     fclose(file);
+   
+}
+
+
+
+void display_and_sort_highscores(){
+  
+    FILE *file = fopen("highscores2.txt", "r");
+    if(file == NULL){printf("Error in displaying highscores!");
+   }
+
+ int n;
+    for(n=0; n<10; n++)
+    {
+   fscanf(file, "%d\t%s\t%s\t%s\t%s\t%d\n", &hsd[n].id,  &hsd[n].real_name, &hsd[n].name, &hsd[n].specie, &hsd[n].date, &hsd[n].score); //list is the highscore list typedef struct
+   printf("============== H I G H S C O R E S ====================\n");
+   printf("ID\t\tPLAYER\tALIAS\tSPECIE\tDATE\tKarma Points\n");
+
+  //sort
+        qsort (hsd, 20, sizeof(Highscores2), compare);
+        for (n=0; n<20; n++)
+            printf ("%d\t%s\t%s\t%s\t%s\t%d\n", hsd[n].id, hsd[n].nreal_ame, hsd[n].name, hsd[n].specie, hsd[n].date, hsd[n].score);
+
+    }
+    fclose(file);
+
+}
+
+
+
+====================
+int compare (const void * a, const void * b)
+{
+
+    Highscores *hsA = (Highscores *)a;
+    Highscores *hsB = (Highscores *)b;
+
+    return ( hsB->score - hsA->score );
+
+}

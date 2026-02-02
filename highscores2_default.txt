@@ -1,0 +1,13 @@
+ovim	Boris	E.T.	121017	25
+borg	James	Insect	121017	60
+lexar	Hakon	Insect	121017	-6
+lagy	Linus	Zoan	121017	-25
+cagot	Brian	Human	121017	-25
+Epi	Ash	Human	121017	57
+Jon	Linus	Droid	121017	-20
+precy	Brian	Insect	121017	12
+tabi	Arakna	Human	121017	14
+Trish	Grace	Insect	121017	16
+sippi	Cat	Insect	121017	-75
+fae	Ash	Droid	121017	-17
+toots	Ash	Insect	121017	54

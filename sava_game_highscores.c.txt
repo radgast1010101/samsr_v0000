@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+
+       const char *sample_name = "tituz";
+
+        printf("name is %s\n", sample_name);
+
+        //save to file, together with kp, specie name
+        //and date
+       FILE *fp;
+
+       fp = fopen("highscores.txt","a");
+       fprintf(fp, "\n");
+       fprintf(fp, sample_name);
+      fprintf(fp, ", ");
+      fprintf(fp, "denis, the human, ");
+      fprintf(fp,"40, ");
+      fprintf(fp, "12/1/2017");
+
+
+       fclose(fp);
+
+//read highscoresi
+
+//from txt file
+}
